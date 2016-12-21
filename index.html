@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="style/index.css" type="text/css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="style/myLife.css" type="text/css"/></head>-->
+
+<body>
+   <div id="header">
+       <div id="img1">
+           <img src="images/headImg.jpg" id="img2">
+       </div>
+       <div id="nav">
+          <ul id="nav-ul">
+             <li><a href="#header" class="nav-li">Home</a></li>
+             <li><a href="#container" class="nav-li">Star Photo</a></li>
+             <li><a href="#myLife" class="nav-li">My Life</a></li>
+             <li><a class="nav-li" id="about1">About Me</a></li>
+             <li><a class="nav-li" id="mes2">Message</a></li>
+             <li><a class="nav-li" id="load">Load</a></li>
+          </ul>
+       </div>
+   </div>
+   <div id="container"></div>
+   <div id="myLife">
+       <div id="myLife1">
+           <img class="pic1" src="image/1.jpg" width="256px" height="191px">
+           <img class="pic2"  src="image/2.jpg" width="256px" height="171px">
+           <img class="pic3"  src="image/3.jpg" width="195px" height="256px">
+           <img class="pic4" src="image/4.jpg" width="256px" height="192px">
+           <img class="pic5" src="image/5.jpg" width="196px" height="256px">
+           <img class="pic6"  src="image/6.jpg" width="256px" height="187px">
+           <img class="pic7" src="image/7.jpg" width="205px" height="256px">
+           <img class="pic8"  src="image/8.jpg" width="256px" height="181px">
+           <img class="pic9" src="image/9.jpg" width="171px" height="256px">
+           <img class="pic10" src="image/10.jpg" width="256px" height="188px">
+       </div>
+   </div>
+   <div id="load1">
+       <div id="top">
+           <div id="delete">×</div>
+       </div>
+       <div id="center">
+           <form action="admin/load.php" method="post" id="form">
+              <label for="use">Username:</label>
+              <input type="text" name="user" id="use"><br><br><br>
+              <label for="pas">Password:</label>
+              <input type="password" name="pass" id="pas"/><br>
+              <div id="bottom1">
+                  <input type="submit" value="登录" id="sub"/>
+                  <a href="register.html"><input type="button" value="注册" id="but"/></a>
+              </div>
+           </form>
+       </div>
+   </div>
+   <div id="mes">
+       <span id="zgh">对我说的话:</span>
+       <div id="delete1">×</div>
+       <form action="admin/textarea.php" method="post" id="form1">
+           <label for="are" id="mes1"></label>
+           <textarea id="are" name="textarea"></textarea><br/>
+           <input type="submit" value="提交" id="sub1">
+       </form>
+   </div>
+   <div id="about">
+       <div id="delete2">×</div>
+       <ul id="pro">
+           <li>姓名:周冠宏</li>
+           <li>毕业学校:黑龙江大学</li>
+           <li>性别：男</li>
+           <li>生日：1994.10.06</li>
+           <li>微信：zgh19941006</li>
+           <li>QQ：505524193</li>
+           <li>手机号：15604601388</li>
+       </ul>
+   </div>
+   <script src="JS/about.js"></script>
+   <script src="JS/textarea.js"></script>
+   <script src="JS/load.js"></script>
+   <script src="JS/container.js"></script>
+</body>
+</html>
